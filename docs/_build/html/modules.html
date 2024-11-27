@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; документация powerswap_bot </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=372fde1a"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=5b699b7f"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Класс для связи с backend’ом" href="backend.html" />
+    <link rel="prev" title="powerswap_bot documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p>===</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Класс для связи с backend’ом</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="backend.html#backend.Backend"><code class="docutils literal notranslate"><span class="pre">Backend</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.add_referral"><code class="docutils literal notranslate"><span class="pre">Backend.add_referral()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.get_user_by_id"><code class="docutils literal notranslate"><span class="pre">Backend.get_user_by_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.handle_user"><code class="docutils literal notranslate"><span class="pre">Backend.handle_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.increase_balance_for_prefix"><code class="docutils literal notranslate"><span class="pre">Backend.increase_balance_for_prefix()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.increase_balance_for_referrers"><code class="docutils literal notranslate"><span class="pre">Backend.increase_balance_for_referrers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.init_session"><code class="docutils literal notranslate"><span class="pre">Backend.init_session()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="backend.html#backend.Backend.session"><code class="docutils literal notranslate"><span class="pre">Backend.session</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="celery_task.html">Таска celery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Всё, что связано с базой данных</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="database.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="database.html#module-database.main">database.main module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.main.format_default_value"><code class="docutils literal notranslate"><span class="pre">format_default_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.main.get_session"><code class="docutils literal notranslate"><span class="pre">get_session()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.main.init_models"><code class="docutils literal notranslate"><span class="pre">init_models()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="database.html#module-database.methods">database.methods module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.add_task"><code class="docutils literal notranslate"><span class="pre">add_task()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.add_user_with_referral_check"><code class="docutils literal notranslate"><span class="pre">add_user_with_referral_check()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.get_all_user_tasks"><code class="docutils literal notranslate"><span class="pre">get_all_user_tasks()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.get_user_info"><code class="docutils literal notranslate"><span class="pre">get_user_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.get_user_referrals"><code class="docutils literal notranslate"><span class="pre">get_user_referrals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.get_users_ids"><code class="docutils literal notranslate"><span class="pre">get_users_ids()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.get_users_info"><code class="docutils literal notranslate"><span class="pre">get_users_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.read_last_update_time"><code class="docutils literal notranslate"><span class="pre">read_last_update_time()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.remove_task"><code class="docutils literal notranslate"><span class="pre">remove_task()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.methods.write_last_update_time"><code class="docutils literal notranslate"><span class="pre">write_last_update_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="database.html#module-database.models">database.models module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.models.RewardsTime"><code class="docutils literal notranslate"><span class="pre">RewardsTime</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.RewardsTime.id"><code class="docutils literal notranslate"><span class="pre">RewardsTime.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.RewardsTime.last_game_time"><code class="docutils literal notranslate"><span class="pre">RewardsTime.last_game_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.RewardsTime.last_referrals_time"><code class="docutils literal notranslate"><span class="pre">RewardsTime.last_referrals_time</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.models.TelegramUser"><code class="docutils literal notranslate"><span class="pre">TelegramUser</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.TelegramUser.chat_id"><code class="docutils literal notranslate"><span class="pre">TelegramUser.chat_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.TelegramUser.completed_tasks_chat_ids"><code class="docutils literal notranslate"><span class="pre">TelegramUser.completed_tasks_chat_ids</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.TelegramUser.completed_tasks_other_types"><code class="docutils literal notranslate"><span class="pre">TelegramUser.completed_tasks_other_types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.TelegramUser.id"><code class="docutils literal notranslate"><span class="pre">TelegramUser.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.TelegramUser.user_id"><code class="docutils literal notranslate"><span class="pre">TelegramUser.user_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.models.UserReferrals"><code class="docutils literal notranslate"><span class="pre">UserReferrals</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserReferrals.id"><code class="docutils literal notranslate"><span class="pre">UserReferrals.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserReferrals.referrer_id"><code class="docutils literal notranslate"><span class="pre">UserReferrals.referrer_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserReferrals.user_id"><code class="docutils literal notranslate"><span class="pre">UserReferrals.user_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.models.UserTasks"><code class="docutils literal notranslate"><span class="pre">UserTasks</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserTasks.chat_id"><code class="docutils literal notranslate"><span class="pre">UserTasks.chat_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserTasks.chat_link"><code class="docutils literal notranslate"><span class="pre">UserTasks.chat_link</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserTasks.description"><code class="docutils literal notranslate"><span class="pre">UserTasks.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserTasks.id"><code class="docutils literal notranslate"><span class="pre">UserTasks.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserTasks.reward"><code class="docutils literal notranslate"><span class="pre">UserTasks.reward</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.UserTasks.task_type"><code class="docutils literal notranslate"><span class="pre">UserTasks.task_type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.models.Users"><code class="docutils literal notranslate"><span class="pre">Users</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.game_information"><code class="docutils literal notranslate"><span class="pre">Users.game_information</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.id"><code class="docutils literal notranslate"><span class="pre">Users.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.referrals_tokens_amount"><code class="docutils literal notranslate"><span class="pre">Users.referrals_tokens_amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.resources_amount"><code class="docutils literal notranslate"><span class="pre">Users.resources_amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.state"><code class="docutils literal notranslate"><span class="pre">Users.state</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.tokens_amount"><code class="docutils literal notranslate"><span class="pre">Users.tokens_amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.upgrades_information"><code class="docutils literal notranslate"><span class="pre">Users.upgrades_information</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.user_id"><code class="docutils literal notranslate"><span class="pre">Users.user_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="database.html#database.models.Users.user_name"><code class="docutils literal notranslate"><span class="pre">Users.user_name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="database.html#module-database.update_balances">database.update_balances module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="database.html#database.update_balances.update_balances"><code class="docutils literal notranslate"><span class="pre">update_balances()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="database.html#module-database">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="funcs.html">Модуль со всевозможными функциями</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="funcs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="funcs.html#module-funcs.ai">funcs.ai module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.ai.get_langchain_response"><code class="docutils literal notranslate"><span class="pre">get_langchain_response()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="funcs.html#module-funcs.markups">funcs.markups module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.markups.generate_markup_for_admin_panel"><code class="docutils literal notranslate"><span class="pre">generate_markup_for_admin_panel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.markups.generate_markup_for_handle_member"><code class="docutils literal notranslate"><span class="pre">generate_markup_for_handle_member()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.markups.generate_markup_for_send_welcome_to_user"><code class="docutils literal notranslate"><span class="pre">generate_markup_for_send_welcome_to_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.markups.users_menu_keyboard"><code class="docutils literal notranslate"><span class="pre">users_menu_keyboard()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="funcs.html#module-funcs.other">funcs.other module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.other.check_tag_in_name"><code class="docutils literal notranslate"><span class="pre">check_tag_in_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.other.delete_message_after_delay"><code class="docutils literal notranslate"><span class="pre">delete_message_after_delay()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.other.get_username_by_user_id"><code class="docutils literal notranslate"><span class="pre">get_username_by_user_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.other.is_rate_limited"><code class="docutils literal notranslate"><span class="pre">is_rate_limited()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.other.is_referrals_rate_limited"><code class="docutils literal notranslate"><span class="pre">is_referrals_rate_limited()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="funcs.html#module-funcs.states">funcs.states module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.states.clear_user_state"><code class="docutils literal notranslate"><span class="pre">clear_user_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.states.get_user_state"><code class="docutils literal notranslate"><span class="pre">get_user_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="funcs.html#funcs.states.set_user_state"><code class="docutils literal notranslate"><span class="pre">set_user_state()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="funcs.html#module-funcs">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="handlers.html">Хэндлеры</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="handlers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handlers.html#module-handlers.admin">handlers.admin module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.admin.admin_distribute"><code class="docutils literal notranslate"><span class="pre">admin_distribute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.admin.admin_panel"><code class="docutils literal notranslate"><span class="pre">admin_panel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.admin.handle_admin_callbacks"><code class="docutils literal notranslate"><span class="pre">handle_admin_callbacks()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.admin.set_welcome_gif"><code class="docutils literal notranslate"><span class="pre">set_welcome_gif()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.admin.set_welcome_message"><code class="docutils literal notranslate"><span class="pre">set_welcome_message()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handlers.html#module-handlers.chat">handlers.chat module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.chat.chats_only"><code class="docutils literal notranslate"><span class="pre">chats_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.chat.handle_member"><code class="docutils literal notranslate"><span class="pre">handle_member()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handlers.html#module-handlers.user">handlers.user module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.handle_ai_command"><code class="docutils literal notranslate"><span class="pre">handle_ai_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.handle_contract_address_info"><code class="docutils literal notranslate"><span class="pre">handle_contract_address_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.handle_presale_info"><code class="docutils literal notranslate"><span class="pre">handle_presale_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.handle_user_check_tasks"><code class="docutils literal notranslate"><span class="pre">handle_user_check_tasks()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.private_chat_only"><code class="docutils literal notranslate"><span class="pre">private_chat_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.send_welcome_to_user"><code class="docutils literal notranslate"><span class="pre">send_welcome_to_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.show_tasks"><code class="docutils literal notranslate"><span class="pre">show_tasks()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.show_user_referrals"><code class="docutils literal notranslate"><span class="pre">show_user_referrals()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="handlers.html#handlers.user.show_user_tasks"><code class="docutils literal notranslate"><span class="pre">show_user_tasks()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handlers.html#module-handlers">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">Точка входа</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.handle_text_messages"><code class="docutils literal notranslate"><span class="pre">handle_text_messages()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.on_startup"><code class="docutils literal notranslate"><span class="pre">main.on_startup()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="messages.html">Тут хранятся все статические сообщения для бота</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Файл с настройками</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#settings.Settings"><code class="docutils literal notranslate"><span class="pre">Settings</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.ADMIN_KEY"><code class="docutils literal notranslate"><span class="pre">Settings.ADMIN_KEY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.API_KEY"><code class="docutils literal notranslate"><span class="pre">Settings.API_KEY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.APP_REFERRALS_URL"><code class="docutils literal notranslate"><span class="pre">Settings.APP_REFERRALS_URL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.COMMUNICATION_BASE_URL"><code class="docutils literal notranslate"><span class="pre">Settings.COMMUNICATION_BASE_URL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.CURRENT_WELCOME_MESSAGE"><code class="docutils literal notranslate"><span class="pre">Settings.CURRENT_WELCOME_MESSAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.DATABASE_DSN"><code class="docutils literal notranslate"><span class="pre">Settings.DATABASE_DSN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html#settings.Settings.TELEGRAM_BOT"><code class="docutils literal notranslate"><span class="pre">Settings.TELEGRAM_BOT</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">powerswap_bot</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="backend.html">Класс для связи с backend’ом</a></li>
+<li class="toctree-l1"><a class="reference internal" href="celery_task.html">Таска celery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Всё, что связано с базой данных</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funcs.html">Модуль со всевозможными функциями</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handlers.html">Хэндлеры</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">Точка входа</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messages.html">Тут хранятся все статические сообщения для бота</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Файл с настройками</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="предыдущая глава">powerswap_bot documentation</a></li>
+      <li>Next: <a href="backend.html" title="следующая глава">Класс для связи с backend’ом</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, powerswap.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.dockerignore
+venv
+.env
+.env.example
+.gitignore
+docker-compose.dev.yml
+.pytest_cache
+.idea
