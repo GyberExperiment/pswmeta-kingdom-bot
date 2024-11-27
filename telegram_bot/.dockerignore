@@ -2,7 +2,7 @@
 venv
 .env
 .env.example
-.gitignore
+../.gitignore
 docker-compose.dev.yml
 .pytest_cache
 .idea

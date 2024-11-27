@@ -106,7 +106,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+telegram_bot/.env
 .env.test
 .env*.local
 .venv
